@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;500;700&family=Roboto+Condensed:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+body{
+    background: #030015;
+    padding: 10px 20px;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 120px;
+    overflow: hidden;
+    font-family: "Roboto Condensed";
+    font-size: 18px;
+    justify-content: center;
+  }
+  
+  li {
+    float: right;
+    /* border-right:1px solid #bbb; */
+  }
+  
+  li:last-child {
+    border-right: none;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: rgba(250, 250, 250, 0.8);
+  }
+  
+
+.bio{
+    margin-top: 120px;
+    margin-left: 150px;
+    text-align: end;
+}
+p{
+  margin-top: 20px;
+  text-align: center;
+} 
+/* .btn-bio{
+    border: none;
+    width: 200px;
+    height: 45px;
+    font-family: "Alegreya Sans SC";
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 140px;
+} */
+.bio-title{
+    font-family: "Roboto condensed";
+    margin-bottom: 5px;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.vl {
+    border-left: 2px solid white;
+    height: 350px;
+    position: absolute;
+    left: 10%;
+    margin-left: -3px;
+    margin-top: 200px;
+    top: 0;
+  }
+.in-photo{
+  width: 500px;
+  height: 100%;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+.column {
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 0 4px;
+  }
+  
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  footer{
+    width: 100%;
+    border: 1px solid white;
+    margin-top: 100px;
+  } 
+@media screen and (max-width: 800px){
+    .bio{
+        margin-top: 200px;
+        margin-left: 10px;
+        text-align: center;
+    }
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+    
+}
+@media screen and (max-width: 600px){
+    .bio{
+        margin-top: 50px;
+    }
+    .li a{
+        padding: 0 50px;
+        
+    }
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+    ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0 60px;
+    overflow: hidden;
+    font-family: "Roboto Condensed";
+    font-size: 18px;
+    justify-content: center;
+    }
+    footer{
+      width: 100%;
+      border: 1px solid white;
+      margin-top: 20px;
+    } 
+}
+
